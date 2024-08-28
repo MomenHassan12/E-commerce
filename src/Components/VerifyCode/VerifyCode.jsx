@@ -15,7 +15,7 @@ const VerifyCode = () => {
             )
             console.log(data)
             toast.success("success")
-            navigate('/resetpassword')
+            navigate('/E-commerce/resetpassword')
 
         } catch (error) {
             console.log(error)

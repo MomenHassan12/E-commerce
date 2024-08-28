@@ -44,8 +44,7 @@ export default function Register() {
             setIsLoading(false)
             navigate('/Login')
         } catch (err) {
-            console.log(err.response.data.message)
-            toast.error("Failed.")
+            toast.error(err.response.data.message)
             setIsLoading(false)
 
         }
@@ -170,7 +169,7 @@ export default function Register() {
                                 <div className="text-red-600 bg-red-200 p-4  mt-2 border border-solid border-red-500 rounded text-sm">{formik.errors.phone}</div>
                             ) : null}
                         </div>
-                        <button type="submit" className=" float-end focus:outline-none border border-gray-400 text-gray-400  mt-3  focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">{isLoading ? <i className=" text-white fa-solid fa-spinner fa-spin" ></i> : 'Register Now'}</button>
+                        <button type="submit" className=" float-end focus:outline-none border border-gray-400 text-gray-400  mt-3  focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">{isLoading ? <i className=" text-gray-500 fa-solid fa-spinner fa-spin" ></i> : 'Register Now'}</button>
 
                     </form>
                 </div>

@@ -15,7 +15,7 @@ const ForgetPassword = () => {
             )
             console.log(data)
             toast.success(data.message)
-            navigate('/verifycode')
+            navigate('/E-commerce/verifycode')
 
         } catch (error) {
             console.log(error)

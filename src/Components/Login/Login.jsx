@@ -104,8 +104,8 @@ export default function Login() {
                         ) : null}
                     </div>
                     <div className="flex flex-wrap justify-between">
-                        <Link to="/forgetpassword" >forget your password ?</Link>
-                        <button type="submit" className="focus:outline-none border border-gray-400 text-gray-400  mt-3  focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">{isLoading ? <i className=" text-white fa-solid fa-spinner fa-spin" ></i> : 'Login Now'}</button>
+                        <Link to="/E-commerce/forgetpassword" >forget your password ?</Link>
+                        <button type="submit" className="focus:outline-none border border-gray-400 text-gray-400  mt-3  focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">{isLoading ? <i className=" text-gray-500 fa-solid fa-spinner fa-spin" ></i> : 'Login Now'}</button>
                     </div>
                 </form>
             </div >

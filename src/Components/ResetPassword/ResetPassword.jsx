@@ -35,7 +35,7 @@ const ResetPassword = () => {
             setToken(data.token);
             localStorage.setItem('tkn', data.token)
             toast.success("success")
-            navigate('/')
+            navigate('/E-commerce')
         } catch (error) {
             console.log(error)
             toast.error("Enter the correct email and password")

@@ -107,7 +107,7 @@ export default function Navbar() {
                                                 </NavLink>
                                             </button>
                                             <button>
-                                                <NavLink to="/Register" className="py-2 px-1 text-gray-500 rounded hover:text-black">
+                                                <NavLink to="Register" className="py-2 px-1 text-gray-500 rounded hover:text-black">
                                                     Register
                                                 </NavLink>
                                             </button>

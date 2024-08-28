@@ -22,7 +22,7 @@ export default function CartContextProvider({ children }) {
                     }
                 })
             getUserCart();
-            toast.success(data.status)
+            console.log(data.status)
             return data
         } catch (error) {
             console.log(error)
@@ -55,8 +55,7 @@ export default function CartContextProvider({ children }) {
             setProducts(data.data.products)
             setTotalPrice(data.data.totalCartPrice)
             setCartId(data.data._id)
-toast.success(data.status)
-            
+
             return data
         } catch (error) {
             console.log(error)
@@ -73,8 +72,8 @@ toast.success(data.status)
             setProducts(data.data.products)
             setTotalPrice(data.data.totalCartPrice)
             setCartId(data.data._id)
-     toast.success(data.status)
-            
+            toast.success(data.status)
+
             return data
         } catch (error) {
             console.log(error)
@@ -91,8 +90,8 @@ toast.success(data.status)
             setNumOfItems(0)
             setProducts([])
             setTotalPrice(0)
-toast.success(data.status)
-            
+            toast.success(data.status)
+
             return data
         } catch (error) {
             console.log(error)

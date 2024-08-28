@@ -18,7 +18,7 @@ export default function Navbar() {
     function logout() {
         localStorage.removeItem('tkn');
         setToken(null);
-        navigate("/Login")
+        navigate("Login")
     }
     return (
         <>
@@ -26,7 +26,7 @@ export default function Navbar() {
 
             <nav className="!bg-[#F8F9FA] w-full border-gray-200  fixed top-0 left-0 z-50 dark:bg-gray-900">
                 <div className="w-[95%] !bg-[#F8F9FA] flex flex-wrap items-center justify-between mx-auto sm:p-0 sm:pb-4 md:p-4  ">
-                    <NavLink to="/" className="md:w-[15%] lg:w-[25%]">
+                    <NavLink to="" className="md:w-[15%] lg:w-[25%]">
                         <img src={img1} className="!w-[150px]" alt="icon" />
                     </NavLink>
 
@@ -44,7 +44,7 @@ export default function Navbar() {
                             <ul
                                 className="font-normal  flex gap-2   w-[85%]  flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg !bg-[#F8F9FA]  lg:flex-row  lg:space-x-4 rtl:space-x-reverse lg:mt-0 md:border-0 lg:bg-white ">
                                 <li>
-                                    <NavLink to="/" className="py-2 px-1 text-gray-500 rounded hover:text-black" aria-current="page">
+                                    <NavLink to="" className="py-2 px-1 text-gray-500 rounded hover:text-black" aria-current="page">
                                         Home
                                     </NavLink>
                                 </li>
@@ -59,7 +59,7 @@ export default function Navbar() {
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/Products" className="py-2 px-1 text-gray-500 rounded hover:text-black">
+                                    <NavLink to="Products" className="py-2 px-1 text-gray-500 rounded hover:text-black">
                                         Products
                                     </NavLink>
                                 </li>
@@ -68,7 +68,7 @@ export default function Navbar() {
                                         Categories                                 </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/Brands" className="py-2 px-1 text-gray-500 rounded hover:text-black">
+                                    <NavLink to="Brands" className="py-2 px-1 text-gray-500 rounded hover:text-black">
                                         Brands
                                     </NavLink>
                                 </li>
@@ -94,7 +94,7 @@ export default function Navbar() {
                                                 </i>
                                             </Link>
                                             <button className=" " onClick={logout}>
-                                                <NavLink to="/Register" className="py-2 px-1  text-gray-500 rounded hover:text-black">
+                                                <NavLink to="Register" className="py-2 px-1  text-gray-500 rounded hover:text-black">
                                                     Logout
                                                 </NavLink>
                                             </button>
@@ -102,7 +102,7 @@ export default function Navbar() {
                                     ) : (
                                         <>
                                             <button>
-                                                <NavLink to="/Login" className="py-2 px-1 text-gray-500 rounded hover:text-black">
+                                                <NavLink to="Login" className="py-2 px-1 text-gray-500 rounded hover:text-black">
                                                     Login
                                                 </NavLink>
                                             </button>

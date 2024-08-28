@@ -82,7 +82,7 @@ export default function Navbar() {
                             </ul>
                         )}
                         <div className=" w-[15%] md:!text-center sm:mt-5 lg:mt-0 lg:!text-left">
-                            {token ?
+                            {
                                 (
                                     token ? (
                                         <>
@@ -112,7 +112,7 @@ export default function Navbar() {
                                                 </NavLink>
                                             </button>
                                         </>
-                                    )) : " "
+                                    ))
                             }
                         </div>
                     </div>

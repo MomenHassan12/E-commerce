@@ -31,21 +31,21 @@ function App() {
   const x = new QueryClient()
   const router = createBrowserRouter([
     {
-      path: '/', element: <Layout />, children: [
-        { path: '/', element: (<ProtectedRoute> <Home /> </ProtectedRoute>), },
-        { path: '/Products', element: (<ProtectedRoute><Products /></ProtectedRoute>), },
-        { path: '/Brands', element: (<ProtectedRoute><Brands /></ProtectedRoute>), },
-        { path: '/ProductDetails/:id', element: (<ProtectedRoute><ProductDetails /></ProtectedRoute>), },
-        { path: '/Register', element: <Register /> },
-        { path: '/Login', element: <Login /> },
-        { path: '/forgetpassword', element: <ForgetPassword /> },
-        { path: '/verifycode', element: <VerifyCode /> },
-        { path: '/resetpassword', element: <ResetPassword /> },
-        { path: '/Category', element: <Category /> },
-        { path: '/Cart', element: (<ProtectedRoute><Cart /></ProtectedRoute>), },
-        { path: '/Payment', element: (<ProtectedRoute><Payment /></ProtectedRoute>), },
-        { path: '/allorders', element: (<ProtectedRoute><AllOrders /></ProtectedRoute>), },
-        { path: '/wishlist', element: (<ProtectedRoute><WishList /></ProtectedRoute>), },
+      path: '/E-commerce', element: <Layout />, children: [
+        { index: true, element: (<ProtectedRoute> <Home /> </ProtectedRoute>), },
+        { path: 'Products', element: (<ProtectedRoute><Products /></ProtectedRoute>), },
+        { path: 'Brands', element: (<ProtectedRoute><Brands /></ProtectedRoute>), },
+        { path: 'ProductDetails/:id', element: (<ProtectedRoute><ProductDetails /></ProtectedRoute>), },
+        { path: 'Register', element: <Register /> },
+        { path: 'Login', element: <Login /> },
+        { path: 'forgetpassword', element: <ForgetPassword /> },
+        { path: 'verifycode', element: <VerifyCode /> },
+        { path: 'resetpassword', element: <ResetPassword /> },
+        { path: 'Category', element: <Category /> },
+        { path: 'Cart', element: (<ProtectedRoute><Cart /></ProtectedRoute>), },
+        { path: 'Payment', element: (<ProtectedRoute><Payment /></ProtectedRoute>), },
+        { path: 'allorders', element: (<ProtectedRoute><AllOrders /></ProtectedRoute>), },
+        { path: 'wishlist', element: (<ProtectedRoute><WishList /></ProtectedRoute>), },
 
       ]
     }

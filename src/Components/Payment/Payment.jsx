@@ -37,6 +37,7 @@ const Payment = () => {
             );
 
             toast.success(data.status);
+            console.log(data.session.url)
             window.open(data.session.url);
         } catch (error) {
             toast.error('Error during payment');

@@ -24,7 +24,6 @@ export default function WishContextProvider({ children }) {
             setWishlist(data.data.map((product) => product._id));  // Adjust according to the actual structure of the API response
         } catch (error) {
             console.log(error);
-            toast.error("Error loading wishlist");
         }
     }
 

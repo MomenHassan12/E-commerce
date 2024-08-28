@@ -38,7 +38,7 @@ export default function Login() {
             localStorage.setItem('tkn', respones.data.token)
             console.log(token)
 
-            navigate('/')
+            navigate('')
         } catch (err) {
             console.log(err)
             toast.error("Failed.")

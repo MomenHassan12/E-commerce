@@ -66,7 +66,7 @@ export default function Products() {
                     {productsToDisplay?.map((product, idx) => (
                         <div key={idx} className="group w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 overflow-hidden hover:border-2 hover:shadow-2xl hover:ring-1 hover:ring-green-300">
                             <div className="p-3">
-                                <Link to={`ProductDetails/${product.id}`} className="">
+                                <Link to={`/E-commerce/ProductDetails/${product.id}`} className="">
                                     <img src={product.imageCover} className="w-full h-[400px]" alt={product.title} />
                                     <h2 className="text-green-600 mt-3">{product.category.name}</h2>
                                     <h2 className="mt-3">{product.title.split(" ").slice(0, 2).join(" ")}</h2>

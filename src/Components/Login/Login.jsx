@@ -38,7 +38,7 @@ export default function Login() {
             localStorage.setItem('tkn', respones.data.token)
             console.log(token)
 
-            navigate('E-commerce')
+            navigate('/E-commerce')
         } catch (err) {
             console.log(err)
             toast.error("Failed.")

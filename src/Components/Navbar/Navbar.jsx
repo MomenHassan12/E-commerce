@@ -81,7 +81,7 @@ export default function Navbar() {
 
                             </ul>
                         )}
-                        <div className=" w-[15%] md:!text-center sm:mt-5 lg:mt-0 lg:!text-end">
+                        <div className=" w-[15%]  sm:mt-5 lg:mt-0 ">
                             {
                                 (
                                     token ? (

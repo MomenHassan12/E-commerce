@@ -13,7 +13,7 @@ const Cart = () => {
                 <div className="flex flex-wrap justify-between items-center">
                     <h1 className=" text-3xl font-semibold ">Cart Shop</h1>
                     {products.length != 0 ? (
-                        <Link to={'payment'}
+                        <Link to={'/E-commerce/payment'}
                             class="focus:outline-none text-white  mt-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 ">Check Out</Link>
                     ) : ""}
                 </div>

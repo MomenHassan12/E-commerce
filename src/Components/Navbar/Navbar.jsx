@@ -38,7 +38,7 @@ export default function Navbar() {
                         </svg>
                     </button>
                     <div
-                        className="hidden lg:w-[75%] md:w-[30%]  lg:flex lg:flex-wrap lg:!justify-between lg:!items-center !bg-[#F8F9FA]
+                        className="hidden lg:w-[75%] md:w-[30%]  lg:flex lg:flex-wrap lg:!justify-end lg:!items-center !bg-[#F8F9FA]
                        " id="navbar-default">
                         {token && (
                             <ul
@@ -81,7 +81,7 @@ export default function Navbar() {
 
                             </ul>
                         )}
-                        <div className=" w-[15%]  sm:mt-5 lg:mt-0 self-end ">
+                        <div className=" w-[15%]  sm:mt-5 lg:mt-0 justify-self-end ">
                             {
                                 (
                                     token ? (

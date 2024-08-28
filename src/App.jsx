@@ -31,7 +31,7 @@ function App() {
   const x = new QueryClient()
   const router = createBrowserRouter([
     {
-      path: '/E-commerce',
+      path: '',
       element: <Layout />,
       children: [
         { index: true, element: (<ProtectedRoute> <Home /> </ProtectedRoute>), },

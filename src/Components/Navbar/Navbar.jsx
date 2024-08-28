@@ -38,7 +38,7 @@ export default function Navbar() {
                         </svg>
                     </button>
                     <div
-                        className="hidden lg:w-[75%] md:w-[30%]  lg:flex lg:flex-wrap lg:!justify-evenly lg:!items-center !bg-[#F8F9FA]
+                        className="hidden lg:w-[75%] md:w-[30%]  lg:flex lg:flex-wrap lg:!justify-between lg:!items-center !bg-[#F8F9FA]
                        " id="navbar-default">
                         {token && (
                             <ul

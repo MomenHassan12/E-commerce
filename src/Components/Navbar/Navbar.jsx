@@ -23,7 +23,7 @@ export default function Navbar() {
 
     return (
         <nav className="!bg-[#F8F9FA] w-full border-gray-200 fixed top-0 left-0 z-50 dark:bg-gray-900">
-            <div className="w-[95%] !bg-[#F8F9FA] flex flex-wrap items-center justify-between mx-auto sm:p-0 sm:pb-4 md:p-4">
+            <div className="w-[95%] !bg-[#F8F9FA] flex flex-wrap items-start justify-between mx-auto sm:p-0 sm:pb-4 md:p-4">
                 <NavLink to="/E-commerce" className="md:w-[15%] lg:w-[25%]">
                     <img src={img1} className="!w-[150px]" alt="icon" />
                 </NavLink>
@@ -54,7 +54,7 @@ export default function Navbar() {
                 </button>
 
                 <div
-                    className="hidden lg:w-[75%] md:w-[30%] lg:flex lg:flex-wrap lg:!justify-end lg:!items-center !bg-[#F8F9FA]"
+                    className="hidden lg:w-[75%]  md:w-[30%] lg:flex lg:flex-wrap lg:!justify-end lg:!items-center !bg-[#F8F9FA]"
                     id="navbar-default"
                 >
                     {token && (

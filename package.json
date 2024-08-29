@@ -15,7 +15,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
     "axios": "^1.7.3",
-    "flowbite": "^2.4.1",
+    "flowbite": "^2.5.1",
     "flowbite-react": "^0.10.1",
     "formik": "^2.4.6",
     "jwt-decode": "^4.0.0",

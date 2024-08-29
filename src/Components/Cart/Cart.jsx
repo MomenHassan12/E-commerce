@@ -32,7 +32,7 @@ const Cart = () => {
                                 <h2 className='mb-3 text-xl'>{item.price}</h2>
                                 <button onClick={() => deleteItem(item.product.id)} type="button" className="focus:outline-none text-red-600  mt-3  focus:ring-4  focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"><i class="fa-solid fa-trash-can"></i> Remove</button>
                             </div>
-                            <div className="w-1/6 flex flex-wrap justify-between items-center ">
+                            <div className="w-1/6 flex lg:flex-row  justify-between items-center ">
                                 <button disabled={item.count == 0 ? true : false} onClick={() => updateCart(item.product.id, item.count - 1)} type="button" className={`${item.count == 0 ? "disabled:opacity-25" : ""} focus:outline-none border border-green-400 text-black mt-3  focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2`}  >-</button>
                                 <h2 className=''>{item.count}</h2>
                                 <button onClick={() => updateCart(item.product.id, item.count + 1)} type="button" className="focus:outline-none border border-green-400 text-black  mt-3  focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">+</button>

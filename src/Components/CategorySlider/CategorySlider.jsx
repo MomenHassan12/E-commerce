@@ -43,7 +43,6 @@ export default function CategorySlider() {
     return (
         <>
             <section className="pb-5">
-
                 <Slider {...settings}>
                     {data?.data.data.map(function (item, idx) {
                         return <div key={idx}>

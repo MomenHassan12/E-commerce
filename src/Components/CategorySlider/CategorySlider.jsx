@@ -15,10 +15,30 @@ export default function CategorySlider() {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 7,
+        slidesToShow: 6,
         slidesToScroll: 1,
         arrows: false,
-        autoplay: true
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1024, // For tablets and small desktops
+                settings: {
+                    slidesToShow: 4, // Show 4 slides
+                },
+            },
+            {
+                breakpoint: 768, // For tablets
+                settings: {
+                    slidesToShow: 3, // Show 3 slides
+                },
+            },
+            {
+                breakpoint: 480, // For mobile devices
+                settings: {
+                    slidesToShow: 2, // Show 2 slides
+                },
+            },
+        ],
     };
     return (
         <>

@@ -27,7 +27,7 @@ const Payment = () => {
     async function onlinePayment(values) {
         try {
             const { data } = await axios.post(
-                `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=http://momenhassan12.github.io/E-commerce`,
+                `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://momenhassan12.github.io/E-commerce`,
                 values,
                 {
                     headers: {

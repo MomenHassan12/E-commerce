@@ -24,18 +24,18 @@ const AllOrders = () => {
         getAllOrders()
     }, [])
     if (loading) {
-        return (<div className="h-screen flex flex-wrap justify-center items-center bg-green-500  ">
-            <Circles
-                height="80"
-                width="80"
-                color="#fff"
-                ariaLabel="circles-loading"
-                wrapperStyle={{}}
-                wrapperClass=""
-                visible={true}
+        return (
 
-            />
-        </div >)
+            <div className="h-screen flex flex-wrap justify-center items-center bg-green-500">
+                <Circles
+                    height="80"
+                    width="80"
+                    color="#fff"
+                    ariaLabel="circles-loading"
+                    visible={true}
+                />
+            </div>
+        )
     }
 
     return (

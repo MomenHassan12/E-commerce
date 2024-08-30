@@ -40,8 +40,8 @@ const AllOrders = () => {
 
     return (
 
-        <section className=''>
-            <div className="w-full md:w-[80%] mx-auto  p-5">
+        <section className='py-24'>
+            <div className="w-full md:w-[80%] mx-auto  p-5 ">
                 {allOrders ? allOrders.map((order, idx) => (
                     <div key={idx} className=''>
                         <div className="bg-slate-200 p-4 mb-3">

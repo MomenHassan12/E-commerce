@@ -18,29 +18,29 @@ export default function HomeSlider() {
     };
 
     return (
-        <section className="mx-auto w-full sm:w-[90%] md:w-[80%] pb-5">
-            <div className="flex flex-col md:flex-row justify-center items-start gap-4">
+        <section className="mx-auto w-full sm:w-[70%] md:w-[50%] py-10">
+            <div className="flex flex-col md:flex-row justify-center items-start">
                 {/* Slider Section */}
-                <div className="w-full md:w-1/2">
+                <div className="w-full md:w-1/2 md:mb-5 lg:mb-0">
                     <Slider {...settings}>
                         <div>
                             <img
                                 src={img1}
-                                className="w-full h-[300px] md:h-[500px] object-cover"
+                                className="w-full sm:h-[700px] md:h-[500px] object-cover"
                                 alt="Slider1"
                             />
                         </div>
                         <div>
                             <img
                                 src={img2}
-                                className="w-full h-[300px] md:h-[500px] object-cover"
+                                className="w-full sm:h-[700px] md:h-[500px] object-cover"
                                 alt="Slider2"
                             />
                         </div>
                         <div>
                             <img
                                 src={img3}
-                                className="w-full h-[300px] md:h-[500px] object-cover"
+                                className="w-full sm:h-[700px] md:h-[500px] object-cover"
                                 alt="Slider3"
                             />
                         </div>
@@ -48,15 +48,15 @@ export default function HomeSlider() {
                 </div>
 
                 {/* Static Images Section */}
-                <div className="w-full md:w-1/2 flex flex-col gap-4">
+                <div className="w-full md:w-1/2 flex flex-col ">
                     <img
                         src={img4}
-                        className="w-full h-[200px] md:h-[250px] object-cover"
+                        className="w-full sm:h-[400px] md:h-[250px] object-cover"
                         alt="Static1"
                     />
                     <img
                         src={img5}
-                        className="w-full h-[200px] md:h-[250px] object-cover"
+                        className="w-full sm:h-[400px] md:h-[250px] object-cover"
                         alt="Static2"
                     />
                 </div>

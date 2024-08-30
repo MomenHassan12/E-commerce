@@ -18,10 +18,10 @@ export default function HomeSlider() {
     };
 
     return (
-        <section className="mx-auto w-full sm:w-[70%] md:w-[50%] py-10">
+        <section className="mx-auto w-full sm:w-[70%] md:w-[50%]  py-10">
             <div className="flex flex-col md:flex-row justify-center items-start">
                 {/* Slider Section */}
-                <div className="w-full md:w-1/2 md:mb-5 lg:mb-0">
+                <div className="w-full md:w-1/2 sm:pb-10 lg:pb-0">
                     <Slider {...settings}>
                         <div>
                             <img
